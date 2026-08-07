@@ -38,8 +38,7 @@ Cortex does neither:
 
 Please actually read these two before running anything.... Yes, I know nobody reads these but PLEASE Read those:
 
-License
-requirements
+License and requirements <--- **VERY IMPORTANT!!**
 
 ---
 
