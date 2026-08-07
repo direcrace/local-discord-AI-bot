@@ -17,11 +17,7 @@ import os
 import shutil
 import sys
 
-# Resolve paths relative to THIS file's location, not the process's current
-# working directory. Otherwise, running the bot from a different folder (or
-# via an IDE debug config with a different cwd) silently fails to find
-# config.json / config.example.json, even though they're right next to
-# config_loader.py.
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(BASE_DIR, "config.json")
 EXAMPLE_PATH = os.path.join(BASE_DIR, "config.example.json")
@@ -147,6 +143,5 @@ def get_default_persona_key(config: dict) -> str:
     for key, persona in config["personas"].items():
         if persona.get("is_default"):
             return key
-    # _validate() guarantees exactly one default exists, so this is unreachable
-    # in practice, but keeps this function safe to call standalone.
+    
     return next(iter(config["personas"]))
