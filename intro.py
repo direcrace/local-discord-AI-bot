@@ -22,7 +22,7 @@ def set_console_title(title: str):
         try:
             ctypes.windll.kernel32.SetConsoleTitleW(title)
         except Exception:
-            pass  # non-fatal — some terminals (e.g. certain CI runners) don't support this
+            pass  
     else:
         sys.stdout.write(f"\33]0;{title}\a")
         sys.stdout.flush()
