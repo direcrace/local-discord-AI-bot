@@ -58,7 +58,7 @@ python cortex_bot.py
 ```
 
 That's it. Full details, including every error message you might see and
-what it actually means, are in `SETUP.md`.
+what it actually means, are in `requirements.md`.
 
 ---
 
