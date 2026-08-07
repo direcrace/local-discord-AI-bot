@@ -1,0 +1,60 @@
+{
+  "bot_name": "CORTEX",
+  "version": "v0.1.0",
+  "author": "YourNameHere",
+
+  "intro": {
+    "enabled": true,
+    "ascii_art": " ██████╗ ██████╗ ██████╗ ████████╗███████╗██╗  ██╗\n██╔════╝██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝╚██╗██╔╝\n██║     ██║   ██║██████╔╝   ██║   █████╗   ╚███╔╝ \n██║     ██║   ██║██╔══██╗   ██║   ██╔══╝   ██╔██╗ \n╚██████╗╚██████╔╝██║  ██║   ██║   ███████╗██╔╝ ██╗\n ╚═════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝",
+    "subtitle": "Neural Governance Layer",
+    "boot_lines": [
+      "Loading configuration...",
+      { "type": "progress", "text": "Downloading persona modules", "duration": 1.8 },
+      "Connecting to Discord gateway...",
+      { "type": "progress", "text": "Initializing neural pathways", "duration": 2.2, "width": 24 },
+      { "type": "progress", "text": "Booting external counter hyperintelligence", "duration": 1.5, "width": 30 },
+      "Finalizing startup sequence...",
+      { "type": "progress", "text": "Activating Cortex AI", "duration": 2.0, "width": 28 },
+      "CORTEX is now online!"
+
+    ]
+  },
+
+  "status_rotation": {
+    "enabled": true,
+    "interval_minutes": 5,
+    "messages": [
+      { "type": "watching", "text": "over the server" },
+      { "type": "playing", "text": "5D chess with itself" },
+      { "type": "listening", "text": "your complaints" },
+      { "type": "watching", "text": "{guild_count} servers" }
+    ]
+  },
+
+  "personas": {
+    "CORTEX": {
+      "display_name": "CORTEX",
+      "is_default": true,
+      "system_prompt": "You are CORTEX, a helpful and neutral Discord assistant. You answer questions clearly and politely."
+    },
+    "NOVA": {
+      "display_name": "NOVA",
+      "is_default": false,
+      "system_prompt": "You are NOVA, a laid-back persona for small talk and gaming. Relaxed tone, gaming references welcome, but stay easy to understand."
+    }
+  },
+
+  "pocket": {
+    "enabled": true,
+    "open_to_all": true,
+    "allowed_user_ids": []
+  },
+
+  "llm": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "local-model",
+    "max_tokens_response": 800,
+    "temperature": 0.8,
+    "max_history_messages": 20
+  }
+}
